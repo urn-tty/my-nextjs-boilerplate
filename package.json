@@ -8,12 +8,12 @@
     "dev": "next dev",
     "build": "next build && next export",
     "start": "next start",
-    "check-types": "tsc --noEmit",
     "lint": "eslint \"**/*.{ts,tsx}\"",
     "lint:fix": "eslint \"**/*.{ts,tsx}\" --fix",
     "format": "prettier --write .",
-    "test-all": "npx yarn-run-all lint check-types format lint:fix",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "cypress:open": "cypress open",
+    "cypress:run": "cypress run"
   },
   "dependencies": {
     "next": "12.0.10",
